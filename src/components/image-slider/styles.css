@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 450px;
+}
+
+.image-item {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 0.5rem;
+}
