@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     width: 1200px;
     height: 450px;
+    position: relative;
 }
 
 .image-item {
@@ -13,4 +14,31 @@
     max-width: 600px;
     height: 450px;
     border-radius: 0.5rem;
+}
+
+.arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.arrow span {
+    padding-bottom: 0.4rem;
+}
+
+.arrow-left {
+    left: 1rem;
+}
+
+.arrow-right {
+    right: 1rem;
 }

@@ -34,6 +34,9 @@ export default function ImageSlider({ url }) {
 
   return (
     <div className="container">
+      <div className="arrow arrow-left">
+        <span>«</span>
+      </div>
       {images && images.length ? (
         images.map((img, index) => (
           <img
@@ -46,6 +49,9 @@ export default function ImageSlider({ url }) {
       ) : (
         <p>No images to show</p>
       )}
+      <div className="arrow arrow-right">
+        <span>»</span>
+      </div>
     </div>
   );
 }
