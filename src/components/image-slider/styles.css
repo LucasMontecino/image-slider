@@ -11,6 +11,7 @@
     width: 550px;
     height: 450px;
     border-radius: 0.5rem;
+    object-fit: cover;
 }
 
 .arrow {
