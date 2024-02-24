@@ -1,17 +1,14 @@
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    width: 1200px;
-    height: 450px;
     position: relative;
 }
 
 .image-item {
     width: 100%;
-    max-width: 600px;
+    width: 550px;
     height: 450px;
     border-radius: 0.5rem;
 }
@@ -41,4 +38,26 @@
 
 .arrow-right {
     right: 1rem;
+}
+
+.circle-container {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    gap: 32px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #F1C40F;
+}
+
+.inactive {
+    background-color: #424949;
 }
