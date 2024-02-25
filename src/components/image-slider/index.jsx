@@ -55,7 +55,6 @@ export default function ImageSlider({ url }) {
 
   useEffect(() => {
     if (!images.length) {
-      console.log("hola");
       fetchImages(url);
     }
 
