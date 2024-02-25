@@ -12,6 +12,7 @@
     height: 450px;
     border-radius: 0.5rem;
     object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .arrow {

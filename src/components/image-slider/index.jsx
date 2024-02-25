@@ -43,25 +43,11 @@ export default function ImageSlider({ url }) {
     setCurrentSlide(getCurrentIndex);
   }
 
-  function handleChangeSlide() {
-    setTimeout(() => {
-      if (currentSlide === images.length - 1) {
-        setCurrentSlide(0);
-      } else {
-        setCurrentSlide(currentSlide + 1);
-      }
-    }, 2000);
-  }
-
   useEffect(() => {
     if (!images.length) {
       fetchImages(url);
     }
-
-    setTimeout(() => {
-      handleChangeSlide();
-    }, 3000);
-  }, [url, currentSlide]);
+  }, [url, images.length]);
 
   if (loading)
     return <p>Please wait ! This is not gonna take a few seconds more.</p>;
